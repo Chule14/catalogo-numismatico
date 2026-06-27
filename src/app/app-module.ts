@@ -4,13 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { CatalogoComponent } from './catalogo/catalogo';
-import { CardMoneda } from './card-moneda/card-moneda'; 
-
+import { CardMonedaComponent } from './card-moneda/card-moneda';
 @NgModule({
   declarations: [
     App,
     CatalogoComponent,
-    CardMoneda 
+    CardMonedaComponent 
   ],
   imports: [
     BrowserModule,

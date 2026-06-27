@@ -6,11 +6,7 @@ export interface Moneda {
   emisor: string;
   epoca: string;
   peso: string;
-  denominacion: string;
-  diametro: string;
-  metal: string;
   conservacion: string;
-  notas: string;
   imagenUrl: string;
 }
 

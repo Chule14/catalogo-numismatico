@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,11 +8,13 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class CatalogoComponent {
-  moneda = {
-    nombre: 'Denariio de Julio César',
+  moneda: any = { 
+    nombre: 'Denario de Julio César',
     epoca: 'Imperio Romano',
     precio: 1200,
-    estado: 'EBC (Extremadamente Bien Conservada)',
-    imagen: 'public/coin.png',
+    estado: 'EBC',
+    imagen: 'coin.png',
   };
 }
+
+ 
