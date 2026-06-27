@@ -7,6 +7,7 @@ export interface Moneda {
   epoca: string;
   peso: string;
   conservacion: string;
+  precio: number;
   imagenUrl: string;
 }
 

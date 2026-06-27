@@ -1,5 +1,5 @@
-
 import { Component } from '@angular/core';
+import { Moneda } from '../card-moneda/card-moneda';
 
 @Component({
   selector: 'app-catalogo',
@@ -8,13 +8,25 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class CatalogoComponent {
-  moneda: any = { 
-    nombre: 'Denario de Julio César',
-    epoca: 'Imperio Romano',
-    precio: 1200,
-    estado: 'EBC',
-    imagen: 'coin.png',
-  };
+  // Asegúrate de usar el nombre "monedas" aquí
+  monedas: Moneda[] = [
+    {
+      pais: 'Imperio Romano',
+      emisor: 'Julio César',
+      epoca: '44 a.C.',
+      peso: '3.9g',
+      conservacion: 'EBC',
+      imagenUrl: 'moneda.png',
+      precio: 1200
+    },
+    {
+      pais: 'reino bizantino',
+      emisor: 'alejandro magno',
+      epoca: '44 a.C.',
+      peso: '3.9g',
+      conservacion: 'B+',
+      imagenUrl: 'moneda.png',
+      precio: 1200
+    }
+  ];
 }
-
- 
