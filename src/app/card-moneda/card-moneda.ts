@@ -2,10 +2,15 @@ import { Component, Input } from '@angular/core';
 
 
 export interface Moneda {
+  nombre: string;
   pais: string;
   emisor: string;
   epoca: string;
   peso: string;
+  denominacion: string;
+  diametro: string;
+  metal: string;
+  notas: string;
   conservacion: string;
   precio: number;
   imagenUrl: string;

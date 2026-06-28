@@ -5,20 +5,23 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { CatalogoComponent } from './catalogo/catalogo';
 import { CardMonedaComponent } from './card-moneda/card-moneda';
+
 import { Menu } from './components/menu/menu';
+import { ColeccionComponent } from './components/coleccion/coleccion';
+
 @NgModule({
   declarations: [
     App,
     CatalogoComponent,
     CardMonedaComponent,
-    Menu 
+    Menu, 
+    ColeccionComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
   ],
   bootstrap: [App]
 })
