@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { CatalogoComponent } from './catalogo/catalogo';
-import { CardMonedaComponent } from './card-moneda/card-moneda';
+import { CatalogoComponent } from './pages/catalogo/catalogo';
+import { CardMonedaComponent } from './components/card-moneda/card-moneda';
 
 import { Menu } from './components/menu/menu';
-import { ColeccionComponent } from './components/coleccion/coleccion';
+import { ColeccionComponent } from './pages/coleccion/coleccion';
 
 @NgModule({
   declarations: [

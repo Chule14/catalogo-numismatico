@@ -4,16 +4,9 @@
     <div class="row">
       @for (m of monedas; track m.nombre) {
         <div class="col-md-4 mb-4">
-          <app-card-moneda [moneda]="m"></app-card-moneda>
+          <app-card-moneda [moneda]="m" (agregar)="guardarMoneda($event)"></app-card-moneda>
         </div>
       }
     </div>
-  </section>
-
-  <hr class="my-5">
-
-  <section>
-    <h2 class="mb-4">Colección Personal de Monedas</h2>
-    <app-coleccion></app-coleccion>
   </section>
 </div>

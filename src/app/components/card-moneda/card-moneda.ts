@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 export interface Moneda {
   nombre: string;
@@ -24,4 +23,18 @@ export interface Moneda {
 })
 export class CardMonedaComponent {
   @Input() moneda!: Moneda;
+  
+  
+  @Input() esColeccion: boolean = false; 
+
+  @Output() agregar = new EventEmitter<Moneda>();
+  @Output() eliminar = new EventEmitter<Moneda>();
+
+  onAgregar() {
+    this.agregar.emit(this.moneda);
+  }
+
+  onEliminar() {
+    this.eliminar.emit(this.moneda);
+  }
 }

@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Mi Colección Personal</h2>
+
+  @if (misMonedas.length > 0) {
+    <div class="row">
+      @for (m of misMonedas; track m.nombre) {
+        <div class="col-md-4 mb-4">
+          <app-card-moneda 
+            [moneda]="m" 
+            [esColeccion]="true" 
+            (eliminar)="eliminarMoneda($event)">
+          </app-card-moneda>
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="alert alert-info">
+      Todavía no tienes monedas en tu colección. ¡Agrega algunas desde el catálogo!
+    </div>
+  }
+</div>

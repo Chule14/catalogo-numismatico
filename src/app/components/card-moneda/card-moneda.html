@@ -1,0 +1,21 @@
+@if (moneda) {
+  <div class="card" style="width: 18rem;">
+    <img [src]="moneda.imagenUrl" class="card-img-top" alt="Anverso">
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>País:</strong> {{moneda.pais}}</li>
+        <li class="list-group-item"><strong>Emisor:</strong> {{moneda.emisor}}</li>
+        <li class="list-group-item"><strong>Precio:</strong> ${{moneda.precio | number:'1.2-2'}}</li>
+      </ul>
+      @if (!esColeccion) {
+        <button class="btn btn-primary mt-3 w-100" (click)="onAgregar()">
+          <i class="bi bi-plus-circle"></i> Agregar a Colección
+        </button>
+      } @else {
+        <button class="btn btn-danger mt-3 w-100" (click)="onEliminar()">
+          <i class="bi bi-trash"></i> Eliminar
+        </button>
+      }
+    </div>
+  </div>
+}
